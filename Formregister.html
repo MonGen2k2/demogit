@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="../buoi3/thumucbuoi3.php" method="post">
+        <h1>Đăng kí</h1>
+        <p>Nhanh chóng dễ dàng</p>
+        <hr>
+        <div>
+            <label for="sur-name">Họ</label>
+            <input type="text" name="sur-name" id="sur-name">
+        </div>
+        <br>
+        <div>
+            <label for="name">Tên</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">địa chỉ email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Số điện thoại</label>
+            <input type="number" name="phone" id="phone">
+        </div>
+        <br>
+        <div>
+            <label for="password">Mật khẩu</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="password_confirmation">Nhập lại mật khẩu</label>
+            <input type="password" name="password_confirmation" id="password_confirmation">
+
+        </div>
+        <br>
+        <div>
+            <label for="day">
+                Sinh nhật
+                <select name="day" id="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+    
+                <select name="month" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+    
+                <input type="number" name="Year" id="year" max="2023" min="1930" placeholder="Năm sinh">
+            </label>
+        </div>
+        <br>
+
+        <div>
+            <label for="gender-male">Giới tính</label>
+            <br>
+            <label>
+                Nam
+                <input type="radio" name="gender" value="male" id="gender-male">
+            </label>
+            <label>
+                Nữ
+                <input type="radio" name="gender" value="fe-male">
+            </label>
+            <label>
+                Tùy chỉnh
+                <input type="radio" name="gender" value="unknown">
+            </label>
+        </div>
+        <div>
+            <div class="g-recaptcha" data-sitekey="6LfzmUgmAAAAAPpmDZOeLYA53qDenR5M8Tgv_vag"></div>
+        </div>
+
+        <button type="submit">Đăng kí</button>
+    </form>
+</body>
+
+</html>

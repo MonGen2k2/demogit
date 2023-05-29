@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Homework</title>
+</head>
+
+<body>
+    <form action="../buoi4/thumucbuoi3.php" method="POST">
+        <h2>Đăng kí</h2>
+
+        <div>
+            <label for="user-name">Tên</label>
+            <input type="text" placeholder="user-name" name="user-name" id="user-name" required>
+            <p>Đây là tên sẽ được hiển thị cùng với thông tin của bạn.Bạn có thể sử dụng bất kỳ tên nào mà bạn muốn</p>
+            <p>Sau khi tạo, bạn sẽ không thể thay đổi được tên này</p>
+        </div>
+
+        <div>
+            <label for="email">Địa chỉ email</label>
+            <input type="email" name="email" id="email" required>
+            <p>Lưu ý điền email cẩn thận.Nếu điền sai. email bạn không thể đăng ký thành viên(khuyến khích nên dùng Gmail)</p>
+        </div>
+        <hr>
+
+        <div>
+            <label for="password">Mật khẩu</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div>
+            <label for="password_confirm">Nhập lại mật khẩu</label>
+            <input type="password" name="password_confirm" id="password_confirm" required>
+            <p>Nhập mật khẩu của bạn trong lần đầu tiên và xác nhận nó bằng cách nhập lại mật khẩu ở ô bên dưới</p>
+        </div>
+        <hr>
+
+        <div>
+            <label for="gender-male">Giới tính</label>
+            <div>
+                <label>
+                    Nam
+                    <input type="radio" name="gender" id="gender-male" value="male">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Nữ
+                    <input type="radio" name="gender" value="fe-male">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Không xác định
+                    <input type="radio" name="gender" value="underfine">
+                </label>
+            </div>
+        </div>
+        <div>
+            <label>
+                Ngày sinh:
+                <select name="month" required>
+                    <option value="1">tháng 1</option>
+                    <option value="2">tháng 2</option>
+                    <option value="3">tháng 3</option>
+                    <option value="4">tháng 4</option>
+                    <option value="5">tháng 5</option>
+                    <option value="6">tháng 6</option>
+                    <option value="7">tháng 7</option>
+                    <option value="8">tháng 8</option>
+                    <option value="9">tháng 9</option>
+                    <option value="10">tháng 10</option>
+                    <option value="11">tháng 11</option>
+                    <option value="12">tháng 12</option>
+                </select>
+                <input type="number" name="day" max="31" min="1" required>
+                <input type="number" name="year" max="2023" min="1931" required>
+            </label>
+        </div>
+        <hr>
+
+        <div>
+
+            <span>Xác nhận:</span>
+            <div class="g-recaptcha" data-sitekey="6LfzmUgmAAAAAPpmDZOeLYA53qDenR5M8Tgv_vag"></div>
+
+        </div>
+
+        <hr>
+
+        <div>
+            <input type="checkbox" required name="policy">
+            <span>Tôi đã đọc <a href="#">Nội quy diễn đàn.</a>Tôi hứa sẽ chấp hành nghiêm chỉnh</span>
+            <br>
+            <button>Đăng kí</button>
+        </div>
+    </form>
+</body>
+
+</html>
